@@ -191,15 +191,32 @@ header::after {
 }
 
 .info-number {
+   text-transform: uppercase;
+  font-family: OpenSans-bold, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  color: #000000;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.info-number-dark {
   text-transform: uppercase;
   font-family: OpenSans-bold, Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
-  color: #000000;
+  color: #7055be;
+  display: inline-block;
+  padding-right: 10px;
 }
 
-.info-number-dark {
-  color: #7055be;
+.info-number-dark::after {
+  content: "";
+  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  height: 4px;
+  width: 15px;
 }
 
 .info-number::after {
@@ -239,6 +256,8 @@ header::after {
   font-size: 14px;
   font-weight: 800;
   color: #000000;
+  display: inline-block;
+  padding-right: 10px;
 }
 
 .info-number-different::after {
