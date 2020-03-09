@@ -21,6 +21,40 @@ body {
   padding: 0;
 }
 
+h1 {
+  margin: 0;
+  font-family: OpenSans-bold, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 31px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: OpenSans-bold, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #e7e7e7;
+}
+
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: OpenSans-bold, Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  color: #c1c1c1;
+}
+
+
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -62,12 +96,6 @@ header::after {
 }
 
 .header__title {
-  font-family: OpenSans-bold, sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 31px;
-  color: #ffffff;
-  text-transform: uppercase;
   position: relative;
   z-index: 1;
   margin-top: 135px;
@@ -149,11 +177,6 @@ header::after {
 .athlets-header-title {
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
-  font-family: OpenSans-bold, Arial, sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  color: #e7e7e7;
   margin-left: 20px;
   margin-right: 87px;
   /* margin-top: 20px; */
@@ -164,9 +187,13 @@ header::after {
   flex-direction: column;
 }
 
-.athlets-header {
-  margin-left: auto;
-  margin-right: auto;
+.athlets-header-img {
+  width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 50%;
+  left: 0;
+  position: relative;
 }
 
 .info-list {
@@ -177,12 +204,12 @@ header::after {
 
 .info-list-grey {
   background-color: #f5f4f9;
-  height: 263px;
+  height: 193px;
 }
 
 .info-list-violet {
   background-color: #5e42b0;
-  height: 228px;
+  height: 189px;
 }
 
 .info-list-dark {
@@ -191,13 +218,14 @@ header::after {
 }
 
 .info-number {
-   text-transform: uppercase;
+  text-transform: uppercase;
   font-family: OpenSans-bold, Arial, sans-serif;
   font-size: 15px;
   font-weight: 800;
   color: #000000;
   display: inline-block;
   padding-right: 10px;
+  vertical-align: top;
 }
 
 .info-number-dark {
@@ -208,6 +236,7 @@ header::after {
   color: #7055be;
   display: inline-block;
   padding-right: 10px;
+  vertical-align: top;
 }
 
 .info-number-dark::after {
@@ -226,14 +255,6 @@ header::after {
   position: absolute;
   height: 4px;
   width: 15px;
-}
-
-.info-list-header {
-  text-transform: uppercase;
-  font-family: OpenSans-bold, Arial, sans-serif;
-  font-size: 23px;
-  font-weight: 600;
-  color: #c1c1c1;
 }
 
 .info-text {
@@ -258,6 +279,7 @@ header::after {
   color: #000000;
   display: inline-block;
   padding-right: 10px;
+  vertical-align: top;
 }
 
 .info-number-different::after {
@@ -267,4 +289,49 @@ header::after {
   position: absolute;
   height: 4px;
   width: 15px;
+}
+
+.number-active {
+  display: block;
+  position: absolute;
+  left: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 26px;
+  background-color: #5e42b0;
+}
+.number{
+  position: relative;
+}
+
+.number::after {
+  content: "";
+  display: block;
+  background-color: #8f7bc8;
+  position: absolute;
+  height: 4px;
+  width: 15px;
+  border-radius: 5px;
+}
+
+.info-block {
+  box-sizing: border-box;
+  width: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.info-block-header {
+margin-bottom: 90px;
+}
+
+.info-blok-text {
+  font-size: 16px;
+}
+
+.be-active__img {
+  width: 100%;
+  height: 100%;
 }
